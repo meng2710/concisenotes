@@ -1,0 +1,46 @@
+/**index.wxss**/
+@import "/components/weui-wxss/dist/style/weui.wxss";
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.user_header{
+  background-color: rgb(190, 175, 190);
+  height: 340rpx;
+  
+}
+.user_header .header_box{
+  padding: 40rpx 0 0 0;
+  
+}
+.user_header .header_box image{
+  display: block;
+  margin: 0 auto;
+  width: 130rpx;
+  height: 130rpx;
+  border: 12rpx hsl(146, 10%, 73%) solid;
+  border-radius: 50%;
+}
+.user_header .header_box button{
+  width: 480rpx;
+  height: 120rpx;
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 32rpx;
+  border: none;
+  border-radius: 40rpx;
+  display: block;
+  margin: 40rpx auto 0 auto;
+  background-color: rgb(190, 175, 190);
+  color: rgb(69, 73, 71);
+}
+
+.uploader-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #010305;
+}

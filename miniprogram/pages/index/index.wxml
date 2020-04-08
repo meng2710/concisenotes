@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="user_header" style="background-color: {{bgcolor}}" bindtouchend="changeBgcolor">
+	<view class="header_box">
+		<image src="{{avatarUrl}}"></image>
+		<button class="userinfo" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" style="background-color: {{bgcolor}}">{{nickName}}</button>
+	</view>
+</view>
+
+<mp-cells>
+	<!-- 笔记数 -->
+	<navigator url="../notes/notes" open-type="switchTab" hover-class="other-navigator-hover">
+		<mp-cell class="uploader-text" link hover value="我的笔记数: {{notesquantity}}条">
+			<mp-icon slot="icon" icon="note" color="orange" size="{{18}}"></mp-icon>
+		</mp-cell>
+	</navigator>
+
+	<!-- 回收站-->
+	<mp-cell class="uploader-text" link hover url="../recyclebin/recyclebin" value="回收站">
+		<mp-icon slot="icon" icon="delete" color="green" size="{{18}}"></mp-icon>
+	</mp-cell>
+
+	<!-- 设置-->
+	<mp-cell class="uploader-text" link hover url="../settings/settings" value="设置">
+		<mp-icon slot="icon" icon="setting" color="blue" size="{{18}}"></mp-icon>
+	</mp-cell>
+
+	<!-- 关于-->
+	<mp-cell class="uploader-text" link hover url="../about/about" value="关于本程序" footer="版本1.16.0">
+		<mp-icon slot="icon" icon="info" color="green" size="{{18}}"></mp-icon>
+	</mp-cell>
+</mp-cells>

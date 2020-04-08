@@ -1,0 +1,17 @@
+<!--miniprogram/pages/recyclebin/recyclebin.wxml-->
+<view class="page">
+	<view class="empty">
+		<button size="mini" bindtap="empty" disabled="{{disabled}}">
+			<mp-icon icon="delete-on" color="red" size="{{20}}"></mp-icon><text>清空回收站</text>
+		</button>
+	</view>
+	<!-- 已删除笔记列表 使用weui的slideview实现左滑删除-->
+	<view class="weui-cells weui-cells_after-title">
+		<navigator url="../edit/edit?_id={{item._id}}&from=recyclebin" wx:for="{{notes}}">
+			<mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" data-index="{{index}}">
+				<mp-cell value="{{item.preview}}" footer="{{item.time}}"></mp-cell>
+			</mp-slideview>
+		</navigator>
+	</view>
+
+</view>

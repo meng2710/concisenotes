@@ -1,0 +1,15 @@
+<view class="page" hidden="{{isLocked}}">
+	<view class="page__bd">
+		<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+	</view>
+
+	<!-- 笔记列表 使用weui的slideview实现左滑删除-->
+	<view class="weui-cells weui-cells_after-title">
+		<navigator url="../edit/edit?_id={{item._id}}&from=noteslist" wx:for="{{notes}}" wx:key="_id">
+			<mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" data-index="{{index}}">
+				<mp-cell value="{{item.preview}}" footer="{{item.time}}"></mp-cell>
+			</mp-slideview>
+		</navigator>
+	</view>
+
+</view>

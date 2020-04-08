@@ -1,0 +1,9 @@
+<!--miniprogram/pages/settings/settings.wxml-->
+<mp-cells title="设置">
+	<mp-cell hover value="清空所有笔记" footer="含回收站" bindtap="emptyAll">
+		<mp-icon slot="icon" icon="delete-on" color="red" size="{{20}}"></mp-icon>
+	</mp-cell>
+	<mp-cell hover value="笔记页面加锁" footer="{{locked}}" bindtap="lockNotespage">
+		<mp-icon slot="icon" icon="lock" color="green" size="{{20}}"></mp-icon>
+	</mp-cell>
+</mp-cells>

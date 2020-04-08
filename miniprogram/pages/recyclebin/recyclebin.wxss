@@ -1,0 +1,17 @@
+/* miniprogram/pages/recyclebin/recyclebin.wxss */
+@import "/components/weui-wxss/dist/style/weui.wxss";
+.empty {
+  display: flex;
+  justify-content: center;  
+  width: 100%;
+  height: 100%;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+.empty text {
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 44rpx;
+  letter-spacing: 3rpx;
+  font-weight: 400;
+}

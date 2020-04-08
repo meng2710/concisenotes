@@ -1,0 +1,24 @@
+<!--miniprogram/pages/about/about.wxml-->
+<view class="top_contain">
+      <view class="des_contain">
+            <view class="name">ConciseNotes(毕设作品)</view>
+      </view>
+</view>
+<view class="contain">
+      <view class="title">程序简介</view>
+      <view class="description">
+            <text>CNotes是一款云笔记应用，使用微信官方提供的小程序云开发功能进行开发。目前有以下功能特性：
+            1.支持图文笔记，支持记录地理位置；
+            2.支持笔记搜索，笔记列表可左滑删除笔记；
+            3.支持通过微信分享笔记；
+            4.支持笔记页面加锁(使用指纹或面容ID解锁);
+            5.回收站;
+            6.头像背景色点击更改(随机颜色)；
+            7.语音转文字输入；
+            8.OCR通用印刷体识别，识别结果自动写入编辑器；
+            9.支持笔记导出为word文档(仅支持电脑端打开)。
+            作者：@lsm
+            </text>
+            <button class='btn' open-type="contact" size="mini">意见反馈</button>
+      </view>
+</view>

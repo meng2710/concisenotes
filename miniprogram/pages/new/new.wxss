@@ -1,0 +1,68 @@
+/* miniprogram/pages/new/new.wxss */
+@import "/components/weui-wxss/dist/style/weui.wxss";
+@import "../assets/iconfont.wxss";
+
+.wrapper {
+  padding: 5px;
+}
+
+.iconfont {
+  display: inline-block;
+  padding: 8px 8px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.toolbar {
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+  border-bottom: 0;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+
+.ql-container {
+  box-sizing: border-box;
+  padding: 12px 15px;
+  width: 100%;
+  min-height: 30vh;
+  height: auto;
+  /* border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; */
+  background: #fff;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.ql-active {
+  color: #06c;
+}
+
+.voice-btn {
+  width: 80%;
+  margin-top: 10rpx;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.voice-btn::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+
+.row .ocr text {
+  width: 100%;
+  font-size: 9px;
+  line-height: 19rpx;
+  letter-spacing: 1rpx;
+  color: green;
+  font-weight: 500;
+}
